@@ -1,4 +1,5 @@
 import React from "react";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 function Navbar() {
   return (
@@ -25,9 +26,7 @@ function Navbar() {
           
 
             {/* Connect Wallet Button */}
-            <button className="px-4 py-2 bg-blue-600 text-white hover:bg-blue-700 text-sm font-medium rounded-md">
-              Connect Wallet
-            </button>
+              <ConnectButton />
           </div>
         </div>
       </div>

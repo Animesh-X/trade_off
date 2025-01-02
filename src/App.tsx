@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import SwapTabContent from "./myComponent/SwapTabContent";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 import LimitTabContent from "./myComponent/LimitTabContent";
 import Navbar from "./myComponent/Navbar";
@@ -34,7 +35,9 @@ function App() {
         </div>
         <TabbedComponent />
         <button className="mt-2 w-full py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition">
-          Connect Wallet
+          <div className="flex justify-center items-center w-full">
+            <ConnectButton />
+          </div>
         </button>
       </div>
     </div></>
@@ -59,7 +62,7 @@ function TabbedComponent() {
           }`}
           onClick={() => setActiveTab("Swap")}
         >
-          Swap
+          Uniswap
         </button>
         <button
           className={`flex-1 text-center py-2 ${
@@ -69,7 +72,7 @@ function TabbedComponent() {
           }`}
           onClick={() => setActiveTab("Limit")}
         >
-          Limit
+          Pancake Swap
         </button>
       </div>
       {activeTab === "Swap" && <SwapTabContent/>}
