@@ -9,6 +9,7 @@ import {
   QueryClientProvider,
   QueryClient,
 } from "@tanstack/react-query";
+import { Toaster } from "react-hot-toast";
 import './index.css'
 import App from './App.tsx'
 import { config } from './utils/config.ts';
@@ -23,6 +24,7 @@ createRoot(document.getElementById('root')!).render(
       <QueryClientProvider client={queryClient}>
         <RainbowKitProvider>
           <App />
+          <Toaster position="bottom-right" reverseOrder={true} />
         </RainbowKitProvider>
       </QueryClientProvider>
     </WagmiProvider>
