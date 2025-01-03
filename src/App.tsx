@@ -5,21 +5,21 @@ import { ConnectButton } from "@rainbow-me/rainbowkit";
 import LimitTabContent from "./myComponent/LimitTabContent";
 import Navbar from "./myComponent/Navbar";
 
-function RateComponent() {
-  return (
-    <div
-      className=" mt-2
-    "
-    >
-      <p className="text-gray-400 text-sm">
-        <span className="font-semibold text-gray-500">1 SUSHI</span>
-        <span className="text-gray-500"> ($1.10969) =</span>
-        <span className="font-semibold text-gray-500"> 0.0005975 WETH</span>
-        <span className="text-gray-400 "> ($1857.31)</span>
-      </p>
-    </div>
-  );
-}
+// function RateComponent() {
+//   return (
+//     <div
+//       className=" mt-2
+//     "
+//     >
+//       <p className="text-gray-400 text-sm">
+//         <span className="font-semibold text-gray-500">1 SUSHI</span>
+//         <span className="text-gray-500"> ($1.10969) =</span>
+//         <span className="font-semibold text-gray-500"> 0.0005975 WETH</span>
+//         <span className="text-gray-400 "> ($1857.31)</span>
+//       </p>
+//     </div>
+//   );
+// }
 
 function App() {
   return (
@@ -29,7 +29,7 @@ function App() {
         <div className="  rounded-lg w-full max-w-md  ">
           <div className="bg-white  rounded-md p-2">
             <h1 className="text-2xl font-semibold text-gray-800 ">Trade</h1>
-            <RateComponent />
+            {/* <RateComponent /> */}
           </div>
           <TabbedComponent />
           <div className="mt-2 w-full py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition cursor-pointer">
