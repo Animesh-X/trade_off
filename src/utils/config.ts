@@ -1,8 +1,6 @@
 import {
     getDefaultConfig,
-    RainbowKitProvider,
   } from '@rainbow-me/rainbowkit';
-  import { WagmiProvider } from 'wagmi';
   import {
     mainnet,
     polygon,

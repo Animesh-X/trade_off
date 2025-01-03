@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import SwapTabContent from "./myComponent/SwapTabContent";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 
